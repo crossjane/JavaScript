@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for 구구단</title>
+    <style>
+    </style>
+</head>
+<body>
+    <div class="container"></div>
+    <script>
+       
+
+        
+        for(let i = 2; i < 10; i++){
+            document.write(`<h2>${i}단</h2>`);
+            for(let j = 1; j < 10; j++){
+            document.write(`<p>${i} * ${j} = ${i*j}</p>`); 
+            //or document.write(`${i} * ${j} = ${i*j}<br>`); 
+            }
+        }
+
+    
+        
+    </script>
+</body>
+</html>
