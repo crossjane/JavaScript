@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이벤트에 메소드 매핑하기</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+   <div class="box"></div>
+   <script>
+        
+        const inputColor = window.prompt("색상을 입력해주세요.(예: red, green, blue, yellow,orange, skyblue, violet)");
+        changeColor(inputColor);
+     
+
+        function changeColor(){
+
+            const box = document.querySelector(".box");
+            box.style.backgroundColor = inputColor;
+        }
+
+        // const button = document.querySelector("button");
+
+        // //익명함수. 콜백함수. 화살표 써도 되고 펑션함수 써도됨. 
+        // button.addEventListener("click", function(){})
+        // 화살표함수는 this로 객체를 받아올 수 없음. 위 함수랑 같은 의미.
+        // button.addEventListener("click", () => {})
+                
+   </script>
+</body>
+</html>
